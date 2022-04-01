@@ -1,11 +1,13 @@
-#!/usr/bin/env python3
+"""Our main script."""
 
-import brain_games.cli
+
+from brain_games import cli
+
 
 def main():
-	print("Welcome to Brain Games!")
-	brain_games.welcome_user()
-	
+    print('Welcome to Brain Games!')  # noqa:421
+    cli.welcome_user()
+
 
 if __name__ == '__main__':
-	main()
+    main()
