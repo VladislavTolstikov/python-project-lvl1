@@ -29,10 +29,10 @@ def main():
             print('Correct!')
             counter = counter + 1
         else:
-            print("\'{0}\'is wrong answer ;(. Correct answer was"
+            print("\'{0}\' is wrong answer ;(. Correct answer was"
                   " \'{1}\'.".format(user_answer, checker(number)),
                   )
             print("Let\'s try again, {0}!".format(name))
             break
     else:
-        print('Congratulations, {0}!'.format(name))
+        print('Congratulations,{0}!'.format(name))
