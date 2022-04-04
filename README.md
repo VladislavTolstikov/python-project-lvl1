@@ -4,3 +4,4 @@
 ![example workflow](https://github.com/VladislavTolstikov/python-project-lvl1/actions/workflows/my-lint.yml/badge.svg)
 
 <a href="https://asciinema.org/a/483576" target="_blank"><img src="https://asciinema.org/a/483576.svg" width="200" height="200" /></a>
+<a href="https://asciinema.org/a/Bt7YEvZvc20VOncIT2roLTmoH" target="_blank"><img src="https://asciinema.org/a/Bt7YEvZvc20VOncIT2roLTmoH.svg" width="200" height="200" /></a>
