@@ -1,16 +1,4 @@
 [[package]]
-name = "ast"
-version = "0.0.2"
-description = "Conversion between protobuf3 and srcML."
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.extras]
-faster-signatures = ["ed25519ll"]
-signatures = ["keyring", "keyrings.alt", "importlib", "pyxdg"]
-
-[[package]]
 name = "astor"
 version = "0.8.1"
 description = "Read/rewrite/write Python ASTs"
@@ -475,13 +463,9 @@ typing_extensions = ">=3.6,<5.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "0aa0c066b0e6e18db45c13d87e017c6c4b624e6a09c38334b0981564023f9531"
+content-hash = "2167a0832d38cc9c08ec9144a409d05167fbcad62dffec1ff969360a56179278"
 
 [metadata.files]
-ast = [
-    {file = "AST-0.0.2-py2-none-any.whl", hash = "sha256:04cf2827c4048d18635ca8f85357a4285d140424ac26028be0dc585f824e07cd"},
-    {file = "AST-0.0.2.tar.gz", hash = "sha256:dc5b79c6ba11aea72c59c791a0bc5ae483b4c18fec6f643002d6fae24361eba0"},
-]
 astor = [
     {file = "astor-0.8.1-py2.py3-none-any.whl", hash = "sha256:070a54e890cefb5b3739d19f30f5a5ec840ffc9c50ffa7d23cc9fc1a38ebbfc5"},
     {file = "astor-0.8.1.tar.gz", hash = "sha256:6a6effda93f4e1ce9f618779b2dd1d9d84f1e32812c23a29b3fff6fd7f63fa5e"},

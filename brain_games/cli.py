@@ -1,6 +1,6 @@
 """Function to read name of user and greet him."""
 
-import ast
+
 from random import choice, randint
 
 import prompt
@@ -55,7 +55,7 @@ def calc_game():
     operand_two = 0
     operation = ''
     counter = 0
-    solution = 0
+    solution = ''
     user_answer = ''
     operands = ['+', '-', '*']
     while counter < 3:
@@ -63,7 +63,7 @@ def calc_game():
         operand_two = randint(1, 15)  # nqa:WPS432
         operation = choice(operands)
         question = str(operand_one) + operation + str(operand_two)
-        solution = ast.literal_eval(question)
+        solution = eval(question)
         print('Question: {0}'.format(question))
         user_answer = input('Your answer:')
         if int(user_answer) == int(solution):
