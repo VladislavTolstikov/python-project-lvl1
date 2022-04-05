@@ -69,6 +69,7 @@ def calc_game():
         operation = choice(operands)
         question = str(operand_one) + operation + str(operand_two)
         solution = eval(question)
+        print('What is the result of the expression?')
         print('Question: {0}'.format(question))
         user_answer = input('Your answer:')
         if int(user_answer) == int(solution):
@@ -91,6 +92,7 @@ def gcd_game():
     while counter < 3:
         operand_one = randint(1, 100)  # nqa:WPS432
         operand_two = randint(1, 100)  # nqa:WPS432
+        print('Find the greatest common divisor of given numbers.')
         print('Question: {0} {1}'.format(operand_one, operand_two))
         while operand_one != 0 and operand_two != 0:
             if operand_one > operand_two:
@@ -105,5 +107,40 @@ def gcd_game():
         else:
             wrong_answer(name, user_answer, answer)
             break
+    else:
+        print('Congratulations,{0}!'.format(name))
+
+
+def prog_game():
+    name = welcome_user()
+    counter = 0
+    answer = 0
+    user_answer = 0
+    first = 0
+    plus = 0
+    blank_index = 0
+    while counter < 3:
+        first = randint(1, 1000)  # nqa:WPS432
+        plus = randint(1, 25)  # nqa:WPS432
+        blank_index = randint(0, 9)  # nqa:WPS432
+        prog = [0 for x in range(0, 10)]
+        prog[0] = first
+        for index in range(1, 10):
+            prog[index] = prog[index - 1] + plus
+        answer = prog[blank_index]
+        prog[blank_index] = '..'
+        print('What number is missing in the progression?')
+        print('Question:{0!s} '.format(prog)[1:-1])
+        user_answer = input('Your answer: ')
+        if user_answer.isdigit is False:
+            print('Only digits allowed.')
+            sys.exit()
+        else:
+            if int(user_answer) == int(answer):
+                print('Correct!')
+                counter += 1
+            else:
+                wrong_answer(name, user_answer, answer)
+                break
     else:
         print('Congratulations,{0}!'.format(name))
