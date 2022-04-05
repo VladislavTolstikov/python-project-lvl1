@@ -1,6 +1,7 @@
 """Function to read name of user and greet him."""
 
 
+import sys
 from random import choice, randint
 
 import prompt
@@ -17,8 +18,12 @@ def welcome_user():
     name = ''
     print('Welcome to Brain Games!')
     name = prompt.string('May I have your name?')
-    print('Hello,{0}!'.format(name))
-    return name
+    if name.isalpha() is False:
+        print('That`s not a name!')
+        sys.exit()
+    else:
+        print('Hello,{0}!'.format(name))
+        return name
 
 
 def wrong_answer(name, your_answer, correct_answer):
@@ -71,6 +76,34 @@ def calc_game():
             counter += 1
         else:
             wrong_answer(name, user_answer, solution)
+            break
+    else:
+        print('Congratulations,{0}!'.format(name))
+
+
+def gcd_game():
+    name = welcome_user()
+    counter = 0
+    answer = 0
+    user_answer = 0
+    operand_one = 0
+    operand_two = 0
+    while counter < 3:
+        operand_one = randint(1, 100)  # nqa:WPS432
+        operand_two = randint(1, 100)  # nqa:WPS432
+        print('Question: {0} {1}'.format(operand_one, operand_two))
+        while operand_one != 0 and operand_two != 0:
+            if operand_one > operand_two:
+                operand_one %= operand_two
+            else:
+                operand_two %= operand_one
+        answer = operand_one + operand_two
+        user_answer = input('Your answer:')
+        if int(user_answer) == answer:
+            print('Correct!')
+            counter += 1
+        else:
+            wrong_answer(name, user_answer, answer)
             break
     else:
         print('Congratulations,{0}!'.format(name))
