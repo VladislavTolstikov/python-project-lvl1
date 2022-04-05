@@ -119,6 +119,7 @@ def prog_game():
     first = 0
     plus = 0
     blank_index = 0
+    question_string = ''
     while counter < 3:
         first = randint(1, 1000)  # nqa:WPS432
         plus = randint(1, 25)  # nqa:WPS432
@@ -129,8 +130,9 @@ def prog_game():
             prog[index] = prog[index - 1] + plus
         answer = prog[blank_index]
         prog[blank_index] = '..'
+        question_string = ' '.join(str(e) for e in prog)
         print('What number is missing in the progression?')
-        print('Question:{0!s} '.format(prog)[1:-1])
+        print('Question: {0} '.format(question_string))
         user_answer = input('Your answer: ')
         if user_answer.isdigit is False:
             print('Only digits allowed.')
