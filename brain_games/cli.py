@@ -7,6 +7,18 @@ from random import choice, randint
 import prompt
 
 
+def prime(dig):
+    flag = 0
+    start = 2
+    while start ** 2 <= dig and flag != 1:
+        if dig % start == 0:
+            flag = 1
+        start += 1
+    if flag == 1:
+        return 'no'
+    return 'yes'
+
+
 def checker(num):
     if num % 2 == 0:
         return 'yes'
@@ -144,5 +156,27 @@ def prog_game():
             else:
                 wrong_answer(name, user_answer, answer)
                 break
+    else:
+        print('Congratulations,{0}!'.format(name))
+
+
+def prime_game():
+    name = welcome_user()
+    answer = 0
+    counter = 0
+    user_answer = ''
+    question = 0
+    print('Answer "yes" if given numer is prime. Otherwise answer "no".')
+    while counter < 3:
+        question = randint(4, 501)
+        print('Question:{0} '.format(question))
+        user_answer = input('Your answer: ')
+        answer = prime(question)
+        if answer == user_answer:
+            print('Correct!')
+            counter += 1
+        else:
+            wrong_answer(name, user_answer, answer)
+            break
     else:
         print('Congratulations,{0}!'.format(name))
