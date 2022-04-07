@@ -34,7 +34,7 @@ def welcome_user():
         print('That`s not a name!')
         sys.exit()
     else:
-        print('Hello,{0}!'.format(name))
+        print('Hello, {0}!'.format(name))
         return name
 
 
