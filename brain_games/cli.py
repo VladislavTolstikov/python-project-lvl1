@@ -169,7 +169,7 @@ def prime_game():
     print('Answer "yes" if given numer is prime. Otherwise answer "no".')
     while counter < 3:
         question = randint(4, 501)
-        print('Question:{0} '.format(question))
+        print('Question: {0}'.format(question))
         user_answer = input('Your answer: ')
         answer = prime(question)
         if answer == user_answer:
