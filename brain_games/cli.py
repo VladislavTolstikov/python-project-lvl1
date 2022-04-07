@@ -62,7 +62,7 @@ def even_game():
             wrong_answer(name, even_answer, checker(number))
             break
     else:
-        print('Congratulations,{0}!'.format(name))
+        print('Congratulations, {0}!'.format(name))
 
 
 def calc_game():
@@ -91,7 +91,7 @@ def calc_game():
             wrong_answer(name, user_answer, solution)
             break
     else:
-        print('Congratulations,{0}!'.format(name))
+        print('Congratulations, {0}!'.format(name))
 
 
 def gcd_game():
@@ -120,7 +120,7 @@ def gcd_game():
             wrong_answer(name, user_answer, answer)
             break
     else:
-        print('Congratulations,{0}!'.format(name))
+        print('Congratulations, {0}!'.format(name))
 
 
 def prog_game():
@@ -157,7 +157,7 @@ def prog_game():
                 wrong_answer(name, user_answer, answer)
                 break
     else:
-        print('Congratulations,{0}!'.format(name))
+        print('Congratulations, {0}!'.format(name))
 
 
 def prime_game():
@@ -179,4 +179,4 @@ def prime_game():
             wrong_answer(name, user_answer, answer)
             break
     else:
-        print('Congratulations,{0}!'.format(name))
+        print('Congratulations, {0}!'.format(name))
