@@ -78,7 +78,7 @@ def calc_game():
     while counter < 3:
         operand_one = randint(1, 15)  # nqa:WPS432
         operand_two = randint(1, 15)  # nqa:WPS432
-        operation = choice(operands)
+        operation = ' ' + choice(operands) + ' '
         question = str(operand_one) + operation + str(operand_two)
         solution = eval(question)
         print('What is the result of the expression?')
