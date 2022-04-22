@@ -4,7 +4,10 @@
 from random import randint
 
 
-def prime_game():
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
+def generate_question():
     """Define prime game main logic."""
     question = randint(4, 501)  # noqa:S311
     flag = 0

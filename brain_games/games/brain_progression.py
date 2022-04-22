@@ -4,7 +4,10 @@
 from random import randint
 
 
-def prog_game():
+DESCRIPTION = 'WWhat number is missing in the progression?'
+
+
+def generate_question():
     """Define progression game logic."""
     first = 0
     plus = 0
@@ -21,4 +24,4 @@ def prog_game():
     answer = prog[blank_index]
     prog[blank_index] = '..'
     question_string = ' '.join(str(e) for e in prog)
-    return [answer, question_string]
+    return (str(answer), question_string)

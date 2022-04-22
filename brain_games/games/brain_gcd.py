@@ -4,7 +4,10 @@
 from random import randint
 
 
-def gcd_game():
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
+
+
+def generate_question():
     """Define logic of greatest common divider."""
     operand_one = randint(1, 100)  # noqa:WPS432, S311
     operand_two = randint(1, 100)  # noqa:WPS432, S311
@@ -16,4 +19,5 @@ def gcd_game():
         else:
             operand_two %= operand_one
     answer = operand_one + operand_two
-    return [answer, o_one, o_two]
+    question = f'{o_one}, {o_two}'
+    return (str(answer), question)
