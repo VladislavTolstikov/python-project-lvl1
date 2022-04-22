@@ -19,5 +19,5 @@ def generate_question():
         else:
             operand_two %= operand_one
     answer = operand_one + operand_two
-    question = f'{o_one}, {o_two}'
+    question = f'{o_one} {o_two}'
     return (str(answer), question)
