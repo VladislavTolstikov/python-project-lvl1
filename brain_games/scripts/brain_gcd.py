@@ -2,13 +2,13 @@
 """The GCD game."""
 
 
-from brain_games.brain_engine import common
+from brain_games.brain_engine import play
 from brain_games.games import brain_gcd
 
 
 def main():
     """Script to launch greates commmon divider game."""
-    common(brain_gcd)
+    play(brain_gcd)
 
 
 if __name__ == '__main__':

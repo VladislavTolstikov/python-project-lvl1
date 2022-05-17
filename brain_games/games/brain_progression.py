@@ -14,9 +14,9 @@ def generate_question():
     blank_index = 0
     question_string = ''
     answer = 0
-    first = randint(1, 1000)  # noqa:WPS432, S311
-    plus = randint(1, 25)  # noqa:WPS432, S311
-    blank_index = randint(0, 9)  # noqa:WPS432, S311
+    first = randint(1, 1000)
+    plus = randint(1, 25)
+    blank_index = randint(0, 9)
     prog = [0 for x in range(0, 10)]
     prog[0] = first
     for index in range(1, 10):

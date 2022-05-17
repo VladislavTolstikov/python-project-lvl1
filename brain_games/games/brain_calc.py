@@ -1,6 +1,6 @@
 """The calculator game."""
 
-
+import numexpr
 from random import choice, randint
 
 
@@ -9,9 +9,9 @@ DESCRIPTION = 'What is the result of the expression?'
 
 def generate_question():
     """No arguments needed. Returns question and correct answer."""
-    operand_one = randint(1, 15)  # noqa: S311
-    operand_two = randint(1, 15)  # noqa: S311
-    operation = choice(['+', '-', '*'])  # noqa: S311
+    operand_one = randint(1, 15)
+    operand_two = randint(1, 15)
+    operation = choice(['+', '-', '*'])
     question = str(operand_one) + operation.center(3) + str(operand_two)
-    answer = eval(question)  # noqa: WPS421, S307
+    answer = numexpr.evaluate(question)
     return (str(answer), question)

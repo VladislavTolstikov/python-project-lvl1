@@ -1,48 +1,35 @@
 """The launcher."""
 
-
-import sys
+import prompt
 from random import randint
 
-from brain_games.cli import get_user_answer, welcome_user
 
+TRIES = 3
 
 def generate_number():
     """Random number generator."""
     return randint(1, 100)
 
 
-def check_answer(name, your_answer, correct_answer):
-    """Print of incorrect answer message.
-
-    Arguments:
-    name -- user name
-    your_answer -- user`s answer
-    correct_answer -- the correct answer
-    """
-    if your_answer == correct_answer:
-        print('Correct!')
-        return True
-    else:
-        print("'{0}' is wrong answer ;(. Correct answer was"
-              "'{1}'.".format(your_answer, correct_answer)
-              )
-        print("Let\'s try again, {0}!".format(name))
-        return False
-
-
-def common(game):
+def play(game):
     """ Main prints and stuff for games."""
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print('Hello, {0}!'.format(name))
     counter = 0
-    name = welcome_user()
-    while counter < 3:
+    while counter < TRIES:
         correct_answer, question = game.generate_question()
         print(game.DESCRIPTION)
         print('Question: {0}'.format(question))
-        user_answer = get_user_answer()
-        res = check_answer(name, user_answer, correct_answer)
-        if not res:
-            sys.exit()
-        counter += 1
+        user_answer = prompt.string('Your answer: ')
+        if user_answer == correct_answer:
+            print('Correct!')
+            counter += 1
+        else:
+            print("'{0}' is wrong answer ;(. Correct answer was"
+                  "'{1}'.".format(user_answer, correct_answer)
+                  )
+            print("Let\'s try again, {0}!".format(name))
+            break
     else:
         print('Congratulations, {0}!'.format(name))

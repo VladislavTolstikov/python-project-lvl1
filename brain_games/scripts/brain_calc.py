@@ -2,13 +2,13 @@
 """The calculator game."""
 
 
-from brain_games.brain_engine import common
+from brain_games.brain_engine import play
 from brain_games.games import brain_calc
 
 
 def main():
     """Script to launch even game."""
-    common(brain_calc)
+    play(brain_calc)
 
 
 if __name__ == '__main__':

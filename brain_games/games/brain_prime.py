@@ -9,7 +9,7 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def generate_question():
     """Define prime game main logic."""
-    question = randint(4, 501)  # noqa:S311
+    question = randint(4, 501)
     flag = 0
     start = 2
     while start ** 2 <= question and flag != 1:

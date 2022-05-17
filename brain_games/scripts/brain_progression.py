@@ -2,13 +2,13 @@
 """Game with poregression."""
 
 
-from brain_games.brain_engine import common
+from brain_games.brain_engine import play
 from brain_games.games import brain_progression
 
 
 def main():
     """Script to launch progression game."""
-    common(brain_progression)
+    play(brain_progression)
 
 
 if __name__ == '__main__':
