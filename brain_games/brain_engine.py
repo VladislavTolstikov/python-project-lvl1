@@ -1,14 +1,9 @@
 """The launcher."""
 
 import prompt
-from random import randint
 
 
 TRIES = 3
-
-def generate_number():
-    """Random number generator."""
-    return randint(1, 100)
 
 
 def play(game):

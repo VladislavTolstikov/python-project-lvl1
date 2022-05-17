@@ -1,7 +1,6 @@
 """The even game."""
 
-
-from brain_games.brain_engine import generate_number
+from random import randint
 
 
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
@@ -9,7 +8,7 @@ DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 def generate_question():
     """Define even game logic."""
-    question = generate_number()
+    question = randint(1, 100)
     if question % 2 == 0:
         answer = 'yes'
         return (answer, question)

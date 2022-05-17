@@ -7,16 +7,20 @@ from random import randint
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
+def count_gcd(number1, number2):
+    while number1 != 0 and number2 != 0:
+        if number1 > number2:
+            number1 %= number2
+        else:
+            number2 %= number1
+    answer = number1 + number2
+    return answer
+
+
 def generate_question():
     """Define logic of greatest common divider."""
-    operand_one = randint(1, 100)
-    operand_two = randint(1, 100)
-    operand_two = operand_two
-    while operand_one != 0 and operand_two != 0:
-        if operand_one > operand_two:
-            operand_one %= operand_two
-        else:
-            operand_two %= operand_one
-    answer = operand_one + operand_two
-    question = f'{o_one} {o_two}'
+    number1 = randint(1, 100)
+    number2 = randint(1, 100)
+    answer = count_gcd(number1, number2)
+    question = f'{number1} {number2}'
     return (str(answer), question)
