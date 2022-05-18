@@ -13,8 +13,7 @@ def count_gcd(number1, number2):
             number1 %= number2
         else:
             number2 %= number1
-    answer = number1 + number2
-    return answer
+    return number1 + number2
 
 
 def generate_question():
