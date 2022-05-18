@@ -2,7 +2,7 @@
 """The GCD game."""
 
 
-from brain_games.brain_engine import play
+from brain_games.engine import play
 from brain_games.games import brain_gcd
 
 

@@ -1,6 +1,5 @@
 """The calculator game."""
 
-import numexpr
 from random import choice, randint
 
 
@@ -13,5 +12,10 @@ def generate_question():
     number2 = randint(1, 15)
     operation = choice(['+', '-', '*'])
     question = str(number1) + operation.center(3) + str(number2)
-    answer = numexpr.evaluate(question)
+    if operation == '+':
+        answer = number1 + number2
+    elif operation == '-':
+        answer = number1 - number2
+    elif operation == '*':
+        answer = number1 * number2
     return (str(answer), question)
