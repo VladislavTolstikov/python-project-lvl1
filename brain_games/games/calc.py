@@ -11,7 +11,7 @@ def generate_question():
     number1 = randint(1, 15)
     number2 = randint(1, 15)
     operation = choice(['+', '-', '*'])
-    question = str(number1) + operation.center(3) + str(number2)
+    question = f"{number1} {operation} {number2}"
     if operation == '+':
         answer = number1 + number2
     elif operation == '-':
