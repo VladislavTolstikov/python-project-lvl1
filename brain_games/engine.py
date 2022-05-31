@@ -11,7 +11,7 @@ def play(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, {0}!'.format(name))
-    for counter in range(0,TRIES):
+    for counter in range(0, TRIES):
         correct_answer, question = game.generate_question()
         print(game.DESCRIPTION)
         print(f"Question: {question}")
