@@ -10,16 +10,13 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 def check_prime(question):
     if question <= 1:
         return False
-    else:
-        flag = 0
-        start = 2
-        while start ** 2 <= question and flag != 1:
-            if question % start == 0:
-                flag = 1
-            start += 1
-        if flag == 1:
+    flag = 0
+    start = 2
+    while start ** 2 <= question and flag != 1:
+        if question % start == 0:
             return False
-        return True
+        start += 1
+    return True
 
 
 def generate_question():
