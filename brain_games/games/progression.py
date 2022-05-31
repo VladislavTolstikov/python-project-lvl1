@@ -13,13 +13,14 @@ PROGRESSION_SIZE = 10
 def generate_progression():
     first_element = 0
     step = 0
-    first_element = randint(1, 1000)
+    first_element = str(randint(1, 1000))
     step = randint(1, 25)
-    progression = [0 for x in range(0, PROGRESSION_SIZE)]
+    progression = ['' for x in range(0, PROGRESSION_SIZE)]
     progression[0] = first_element
     for index in range(1, PROGRESSION_SIZE):
-        progression[index] = (progression[index - 1] + step)
-    return list(map(str, progression))
+        progression[index] = int(progression[index - 1]) + step
+        progression[index] = str(progression[index])
+    return progression
 
 
 def generate_question():
