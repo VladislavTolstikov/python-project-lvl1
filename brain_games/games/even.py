@@ -12,6 +12,6 @@ def generate_question():
     answer = 'no'
     if question % 2 == 0:
         answer = 'yes'
-        return (answer, question)
-    answer = 'no'
+    else:
+        answer = 'no'
     return (answer, question)
