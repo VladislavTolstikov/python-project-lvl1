@@ -22,7 +22,6 @@ def generate_progression():
 
 def generate_question():
     """Define progression game logic."""
-    answer = 0
     blank_index = randint(0, PROGRESSION_SIZE - 1)
     progression = list(map(str, generate_progression()))
     answer = progression[blank_index]
