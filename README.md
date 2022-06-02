@@ -21,19 +21,19 @@ There are 5 simple games for console:
  
  Brain even
  
-<a href="https://asciinema.org/a/eM3gSGxGiS1nW5jmEKSgwes0U" target="_blank"><img src="https://asciinema.org/a/eM3gSGxGiS1nW5jmEKSgwes0U.svg" /></a>
+<a href="https://asciinema.org/a/e0c3CJXHARTfCxRVzyBPmC4SH" target="_blank"><img src="https://asciinema.org/a/e0c3CJXHARTfCxRVzyBPmC4SH.svg" /></a>
 
 Calculator
 
 <a href="https://asciinema.org/a/Bt7YEvZvc20VOncIT2roLTmoH" target="_blank"><img src="https://asciinema.org/a/Bt7YEvZvc20VOncIT2roLTmoH.svg" /></a>
 
-Greatest common divider
+Greatest common divisor
 
- <a href="https://asciinema.org/a/lJoAA5OqAffoiY7OgMzLRT3xA" target="_blank"><img src="https://asciinema.org/a/lJoAA5OqAffoiY7OgMzLRT3xA.svg" /></a>
+ <a href="https://asciinema.org/a/6GxQOOpFyuvQKbW0v46CmqMIi" target="_blank"><img src="https://asciinema.org/a/6GxQOOpFyuvQKbW0v46CmqMIi.svg" /></a>
  
  Ariphmetic progression
  
-<a href="https://asciinema.org/a/S77SwyVqnBeDFDxzTLOlG65Cs" target="_blank"><img src="https://asciinema.org/a/S77SwyVqnBeDFDxzTLOlG65Cs.svg" /></a>
+<a href="https://asciinema.org/a/XohEYdlN5GuDwLszZXqThIhHn" target="_blank"><img src="https://asciinema.org/a/XohEYdlN5GuDwLszZXqThIhHn.svg" /></a>
 
 Prime game
 
