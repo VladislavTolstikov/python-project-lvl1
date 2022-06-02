@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "zwero-brain-games"
-version = "1.0"
+name = "hexlet-code"
+version = "0.1.0"
 description = ""
 authors = ["VladislavTolstikov <omfgzwero@gmail.com>"]
 packages = [
