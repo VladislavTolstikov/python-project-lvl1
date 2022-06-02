@@ -26,5 +26,5 @@ def generate_question():
     progression = list(map(str, generate_progression()))
     answer = progression[blank_index]
     progression[blank_index] = '..'
-    question_string = ' '.join(str(e) for e in progression)
-    return (answer, question_string)
+    question = ' '.join(e for e in progression)
+    return (answer, question)
